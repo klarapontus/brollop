@@ -791,6 +791,39 @@ Google map
 }
 
 /* ==========================================================================
+Location
+========================================================================== */
+.location-section {
+  display: flex;
+  align-items: center; // Vertically center the content
+}
+
+.location-text {
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left; // Center the text within its container
+}
+
+.location-map {
+  width: 50%;
+  text-align: center; // Center the text within its container
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    flex-direction: column;
+    padding-left: 0; // Remove left padding on mobile
+    padding-right: 0; // Remove right padding on mobile
+  }
+
+  .location-text,
+  .location-map {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
 RSVP form
 ========================================================================== */
 .rsvp {
