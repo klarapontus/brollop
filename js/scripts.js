@@ -202,7 +202,7 @@ $(document).ready(function () {
             title: "Klaras och Pontus bröllop",
 
             // Event start date
-            start: new Date('Aug 9, 2025 15:50'),
+            start: new Date('Aug 9, 2025 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -215,7 +215,7 @@ $(document).ready(function () {
             address: 'Hallavaravägen 21, 269 91, Båstad',
 
             // Event Description
-            description: "Mer info som uppdateras kontinuerligt på: www.kpbröllop.se"
+            description: "Anländ 10 minuter innan. Mer info som uppdateras kontinuerligt på: www.kpbröllop.se"
         }
     });
 
