@@ -725,6 +725,52 @@ Engagement Pics
   }
 }
 
+/* ... other styles ... */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
+  gap: 20px;
+  justify-content: center; /* Center the grid items */
+  padding-left: 25vw; /* 25% of viewport width */
+  padding-right: 25vw; /* 25% of viewport width */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Center the last image if it's alone in the row */
+.image-grid > .image-container:last-child:nth-child(odd) {
+  grid-column: span 2; /* Make it span both columns */
+  display: flex;
+  justify-self: center; /* Center it horizontally */
+  align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      justify-content: initial; /* Reset justification */
+      padding-left: 5vw; /* Smaller padding on mobile */
+      padding-right: 5vw; /* Smaller padding on mobile */
+  }
+
+  .image-grid > .image-container:last-child:nth-child(odd) {
+      grid-column: auto; /* Reset column span */
+      width: 100%;
+  }
+}
+
 /* ==========================================================================
 Embed video
 ========================================================================== */
