@@ -163,13 +163,10 @@ Animations
 Waypoinsts
 ========================================================================== */
 
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12 {
   visibility: hidden
 }
-.wp8, .wp9 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s
-}
+
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible
 }
