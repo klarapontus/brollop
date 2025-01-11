@@ -202,20 +202,20 @@ $(document).ready(function () {
             title: "Klaras och Pontus bröllop",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Aug 9, 2025 15:50'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Aug 9, 2025 23:59'),
 
             // Event Address
-            address: 'Hovs Kyrka, Hov',
+            address: 'Hallavaravägen 21, 269 91, Båstad',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "Mer info som uppdateras kontinuerligt på: www.kpbröllop.se"
         }
     });
 
@@ -227,11 +227,11 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Vänta och stanna kvar på sidan!</strong> Vi håller på att spara allting.'));
 
         if (MD5($('#invite_code').val()) !== '1bfdf104aa5a20c04e258834266c79d8'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Fel anmälningskod!</strong> Använd koden på din fysiska inbjudan. Om det strular, kontakta Pontus eller Klara.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwDGbTBbFDn9RY3qxp84IkDm6PjEm78946my3NY0fi7mWOydKSj61IYnzICIi5jM0N3/exec', data)
                 .done(function (data) {
@@ -245,7 +245,7 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Crash!</strong> Det blev något fel med anmälan. Kontakta Pontus eller Klara. '));
                 });
         }
     });
