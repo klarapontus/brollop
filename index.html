@@ -768,18 +768,18 @@
                     <p>Var vänlig och <strong>anmäl varje inviduell gäst</strong> i följande formulär innan XX datum -
                         även om du inte kan komma. Anmälningskod hittar ni på eran fysiska inbjudan.</p>
                     <form id="rsvp-form" class="rsvp-form"
-                        action="https://script.google.com/macros/s/AKfycbwDGbTBbFDn9RY3qxp84IkDm6PjEm78946my3NY0fi7mWOydKSj61IYnzICIi5jM0N3/exec"
+                        action="https://script.google.com/macros/s/AKfycbxAbk0bSWMk_LGiE-8DkjlKj_jRmyqXfdVwUyC98SeiWrqfCOUT5fEG5eLRu7zhL_H5/exec"
                         method="POST">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
                                     <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                        placeholder="Your email" required>
+                                        placeholder="Epost" required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name"
+                                    <i class="fa fa-user"></i><input name="namn" class="" placeholder="Namn"
                                         required>
                                 </div>
                             </div>
@@ -787,14 +787,17 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
+                                    <!--
                                     <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
                                         max="4" placeholder="Husband/Wife or kids" required>
+                                    -->
+                                    <i class="fa fa-user"></i><input name="matpreferens" class="" placeholder="Matpreferenser/allergier"
+                                    required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                        class="" min="0" placeholder="Invite code" required>
+                                    <i class="fa fa-key"></i><input name="invite_code" id="invite_code" placeholder="Kod (se inbjudan)" required>
                                 </div>
                             </div>
                         </div>
