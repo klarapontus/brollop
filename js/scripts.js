@@ -229,11 +229,11 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Vänta och stanna kvar på sidan!</strong> Vi håller på att spara allting.'));
 
-        if (MD5($('#invite_code').val()) !== '1bfdf104aa5a20c04e258834266c79d8'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'd004502d6a144f51335ba42f7e457bc1'
+            && MD5($('#invite_code').val()) !== 'd004502d6a144f51335ba42f7e457bc1') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Fel anmälningskod!</strong> Använd koden på din fysiska inbjudan. Om det strular, kontakta Pontus eller Klara.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwDGbTBbFDn9RY3qxp84IkDm6PjEm78946my3NY0fi7mWOydKSj61IYnzICIi5jM0N3/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxAbk0bSWMk_LGiE-8DkjlKj_jRmyqXfdVwUyC98SeiWrqfCOUT5fEG5eLRu7zhL_H5/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
