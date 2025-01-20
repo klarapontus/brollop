@@ -306,6 +306,7 @@
     
     .hero .hero-content img {
         width: 100%;
+        padding-bottom: 30%;
     }
 
     .hero .btn {
