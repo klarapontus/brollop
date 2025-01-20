@@ -851,14 +851,15 @@ Location
 
 .location-map {
   width: 50%;
+  height: 50%;
   text-align: center; // Center the text within its container
 }
 
 @media (max-width: 768px) {
   .location-section {
     flex-direction: column;
-    padding-left: 0; // Remove left padding on mobile
-    padding-right: 0; // Remove right padding on mobile
+    padding-left: 0px; // Remove left padding on mobile
+    padding-right: 0px; // Remove right padding on mobile
   }
 
   .location-text,
