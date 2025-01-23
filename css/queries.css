@@ -25,7 +25,7 @@
     }
 
     .hero .hero-content {
-        size: 200px auto;
+        padding-top: 50%;
     }
 
     .header-nav {
@@ -265,10 +265,6 @@
         padding-top: 50%;
     }
 
-    .hero .hero-content img {
-        size: 150px auto; // Adjust for even smaller screens
-    }
-
     #eng-pics .img-wrap i {
         font-size: 25px;
         position: absolute;
@@ -309,7 +305,8 @@
     }
     
     .hero .hero-content img {
-        size: 100px auto; // Adjust for even smaller screens
+        width: 100%;
+        padding-bottom: 30%;
     }
 
     .hero .btn {
@@ -370,10 +367,6 @@
 @media screen and (max-width: 320px) {
     .hero .hero-content {
         padding-top: 100%;
-    }
-
-    .hero .hero-content img {
-        size: 75px auto; // Adjust for very small screens
     }
 
     .rsvp {
