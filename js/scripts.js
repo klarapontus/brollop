@@ -507,27 +507,26 @@ var MD5 = function (string) {
     return temp.toLowerCase();
 };
 
-// Set the date and time of the event
-var eventDate = new Date(2025, 7, 8, 23, 59, 59);
+// Function to calculate and display the countdown
+function updateCountdown() {
+  // Set the date and time of the event
+  var eventDate = new Date(2025, 7, 8, 23, 59, 59);
 
-// Get the current date and time
-var now = new Date();
+  // Get the current date and time
+  var now = new Date();
 
-// Calculate the difference between the event date and the current date
-var diff = eventDate - now;
+  // Calculate the difference between the event date and the current date
+  var diff = eventDate - now;
 
-// Calculate the number of days, hours, minutes, and seconds until the event
-var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  // Calculate the number of days until the event
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-// Display the countdown on the page
-document.getElementById("countdown").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
-
-// Update the countdown every second
-setInterval(function () {
-  diff = eventDate - now;
-  days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  // Display the countdown on the page
   document.getElementById("countdown").innerHTML = days + " dagar kvar";
-}, 1000);
+}
+
+// Initial countdown update
+updateCountdown();
+
+// Update the countdown every day
+setInterval(updateCountdown, 1 * 60 * 1000); // 24 hours * 60 minutes * 60 seconds * 1000 milliseconds
