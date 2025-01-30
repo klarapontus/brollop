@@ -262,7 +262,7 @@
 
 @media screen and (max-width: 640px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 100%;
     }
 
     #eng-pics .img-wrap i {
@@ -301,7 +301,7 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 110%;
     }
     
     .hero .hero-content img {
@@ -366,7 +366,7 @@
 
 @media screen and (max-width: 320px) {
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 130%;
     }
 
     .rsvp {
@@ -374,9 +374,3 @@
     }
 }
 
-.countdown-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
