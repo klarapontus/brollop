@@ -510,16 +510,19 @@ var MD5 = function (string) {
 // Function to calculate and display the countdown
 function updateCountdown() {
   // Set the date and time of the event
-  var eventDate = new Date(2025, 7, 8, 23, 59, 59);
+  var eventDate = new Date(2025, 7, 9, 0, 0, 0);
 
   // Get the current date and time
   var now = new Date();
+
+  // Zero out the time components of the current date
+  now.setHours(0, 0, 0, 0);
 
   // Calculate the difference between the event date and the current date
   var diff = eventDate - now;
 
   // Calculate the number of days until the event
-  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
   // Display the countdown on the page
   document.getElementById("countdown").innerHTML = days + " dagar kvar";
